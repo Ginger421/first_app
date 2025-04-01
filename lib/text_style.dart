@@ -1,20 +1,51 @@
 import 'package:flutter/material.dart';
 
-class CustomText extends StatelessWidget { 
-  const CustomText({super.key});
+// class StyledText extends StatelessWidget {
+//   const StyledText(this.text, {super.key});
 
+//   final String text;
+
+//   @override
+//   Widget build(context) {
+//     return Text(
+//       text,
+//       style: const TextStyle(
+//         color: Colors.white,
+//         fontSize: 28,
+//       ),
+//     );
+//   }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//import 'package:flutter/material.dart';
+
+class MyText extends StatelessWidget {
+  
+  const MyText(this.text,
+  {super.key});
+
+  final String text;
+ 
   @override
   Widget build(context) {
     
-      return const Text (
-        "hellooo Ginger",
-        style: TextStyle(fontSize: 24, color: Colors.white)
-            );
+      return Text(
+        text,
+        style: TextStyle(fontSize: 24, color: Colors.white,)
+        );        
   }
 }
-
-
-// Text(
-//               "hellloooo",
-//               style: TextStyle(fontSize: 24, color: Colors.white),
-//             ),
