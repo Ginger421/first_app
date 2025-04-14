@@ -5,7 +5,7 @@ void main() {
   runApp(
     MaterialApp(
       home: Scaffold( 
-        body: GraidientContainer()
+        body: GraidientContainer([Colors.blueAccent, Colors.white54])
       ),
     ),
   ); //runApp

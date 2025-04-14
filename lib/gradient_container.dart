@@ -3,14 +3,16 @@ import 'package:first_app/text_style.dart';
 
 
 class GraidientContainer extends StatelessWidget {
-  const GraidientContainer({super.key});
+  const GraidientContainer(this.colors, {super.key});
+
+final List <Color> colors;
 
   @override
   Widget build(context) {
     return Container(
           decoration: BoxDecoration(
             gradient: LinearGradient(
-              colors: [Colors.blueAccent, Colors.deepPurpleAccent], //color
+              colors: colors, //color
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
             ),
