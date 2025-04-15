@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:first_app/text_style.dart';
+// import 'package:first_app/text_style.dart';
 
 
 class GraidientContainer extends StatelessWidget {
@@ -17,8 +17,13 @@ final List <Color> colors;
               end: Alignment.bottomRight,
             ),
           ),
-          child: const Center(
-            child: MyText("hello Ginger"),
+          child: Center(
+            child: Column(
+              children: [
+                Image.asset("assets/images/dice-1.png", width: 200,),
+                TextButton(onPressed: onPressed, child: Text("Roll!"))
+              ],
+            )
           ),
         );
   }
