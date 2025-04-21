@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-// import 'package:first_app/text_style.dart';
-
+import 'package:first_app/roll_dice.dart';
 
 class GraidientContainer extends StatelessWidget {
-  const GraidientContainer(this.colors, {super.key});
+  GraidientContainer(this.colors, {super.key});
 
 final List <Color> colors;
 
@@ -18,12 +17,7 @@ final List <Color> colors;
             ),
           ),
           child: Center(
-            child: Column(
-              children: [
-                Image.asset("assets/images/dice-1.png", width: 200,),
-                TextButton(onPressed: onPressed, child: Text("Roll!"))
-              ],
-            )
+            child: 
           ),
         );
   }
