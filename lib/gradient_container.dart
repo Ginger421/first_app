@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:first_app/roll_dice.dart';
 
 class GraidientContainer extends StatelessWidget {
-  GraidientContainer(this.colors, {super.key});
+  const GraidientContainer(this.colors, {super.key});
 
 final List <Color> colors;
 
@@ -17,7 +17,7 @@ final List <Color> colors;
             ),
           ),
           child: Center(
-            child: 
+            child: RollDice(),
           ),
         );
   }
